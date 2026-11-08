@@ -1,0 +1,1 @@
+import{j as s}from"./index-CGIZPV6r.js";function a({cantidad:t}){let e="bg-turquesa-light text-turquesa-dark",o=`${t} disponibles`;return t===0?(e="bg-tinto-light text-tinto",o="Agotado"):t<=5&&(e="bg-naranja-light text-naranja-dark",o=`Quedan ${t}`),s.jsx("span",{className:`whitespace-nowrap rounded-full px-2.5 py-1 text-xs font-bold ${e}`,children:o})}export{a as S};

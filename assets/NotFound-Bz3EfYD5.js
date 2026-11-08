@@ -1,0 +1,1 @@
+import{j as e,L as t}from"./index-CGIZPV6r.js";import{P as i}from"./PageTitle-CYDvBQnT.js";function a(){return e.jsxs(e.Fragment,{children:[e.jsx(i,{title:"Página no encontrada",subtitle:"La dirección que ingresaste no existe."}),e.jsx(t,{to:"/",className:"btn-primary",children:"Volver al inicio"})]})}export{a as default};
