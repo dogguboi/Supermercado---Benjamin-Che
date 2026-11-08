@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Patrones repetidos agrupados con @apply para mantener los componentes limpios */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-bold
+           transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-turquesa
+           focus-visible:ring-offset-2 focus-visible:ring-offset-crema-light
+           disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  /* Acción principal: tinto */
+  .btn-primary {
+    @apply btn bg-tinto text-white hover:bg-tinto-dark;
+  }
+  /* Acción secundaria: borde carbón sobre fondo claro */
+  .btn-secondary {
+    @apply btn border border-carbon/30 bg-crema-light text-carbon hover:bg-crema;
+  }
+  .btn-danger {
+    @apply btn text-tinto hover:bg-tinto-light;
+  }
+  .campo {
+    @apply w-full rounded-lg border border-carbon/30 bg-white px-3 py-2 text-sm text-carbon
+           focus:border-turquesa-dark focus:outline-none focus:ring-2 focus:ring-turquesa/40;
+  }
+  .tarjeta {
+    @apply rounded-xl border border-carbon/15 bg-crema-light p-5;
+  }
+  /* Mensajes de confirmación */
+  .aviso {
+    @apply rounded-lg border-l-4 border-turquesa bg-turquesa-light px-4 py-3 text-carbon;
+  }
+}
+
+body {
+  @apply bg-crema font-sans text-carbon antialiased;
+}
